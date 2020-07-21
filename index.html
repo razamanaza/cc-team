@@ -1,0 +1,20 @@
+---
+layout: default
+title: CloudCannon team
+---
+<h1>CloudCannon Team Members Quiz</h1>
+<div class="members">
+  {% for member in site.members %}
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="{{ member.img }}" alt="member.name" width="300" height="300">
+        </div>
+        <div class="flip-card-back">
+          <h2>{{ member.name }}</h2>
+          <p>{{ member.position }}</p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
